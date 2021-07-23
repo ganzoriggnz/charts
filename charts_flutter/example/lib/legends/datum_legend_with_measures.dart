@@ -109,7 +109,7 @@ class DatumLegendWithMeasures extends StatelessWidget {
           legendDefaultMeasure: charts.LegendDefaultMeasure.firstValue,
           // Optionally provide a measure formatter to format the measure value.
           // If none is specified the value is formatted as a decimal.
-          measureFormatter: (num? value) {
+          measureFormatter: (num value) {
             return value == null ? '-' : '${value}k';
           },
         ),

@@ -285,12 +285,12 @@ class TimeSeriesSymbolAnnotationChart extends StatelessWidget {
 /// Sample time series data type.
 class TimeSeriesSales {
   final DateTime timeCurrent;
-  final DateTime? timePrevious;
-  final DateTime? timeTarget;
-  final int? sales;
+  final DateTime timePrevious;
+  final DateTime timeTarget;
+  final int sales;
 
   TimeSeriesSales({
-    required this.timeCurrent,
+    this.timeCurrent,
     this.timePrevious,
     this.timeTarget,
     this.sales,

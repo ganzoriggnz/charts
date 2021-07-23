@@ -152,7 +152,7 @@ class LegendWithMeasures extends StatelessWidget {
           showMeasures: true,
           // Optionally provide a measure formatter to format the measure value.
           // If none is specified the value is formatted as a decimal.
-          measureFormatter: (num? value) {
+          measureFormatter: (num value) {
             return value == null ? '-' : '${value}k';
           },
         ),

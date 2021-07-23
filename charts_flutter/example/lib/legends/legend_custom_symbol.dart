@@ -30,7 +30,7 @@ class IconRenderer extends charts.CustomSymbolRenderer {
 
   @override
   Widget build(BuildContext context,
-      {Size? size, Color? color, bool enabled = true}) {
+      {Size size, Color color, bool enabled = true}) {
     // Lighten the color if the symbol is not enabled
     // Example: If user has tapped on a Series deselecting it.
     if (color != null && !enabled) {

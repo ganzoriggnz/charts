@@ -129,7 +129,7 @@ class SelectionCallbackExample extends StatefulWidget {
 }
 
 class _SelectionCallbackState extends State<SelectionCallbackExample> {
-  DateTime? _time;
+  DateTime _time;
   Map<String, num> _measures = {};
 
   // Listens to the underlying selection changes, and updates the information
@@ -138,7 +138,7 @@ class _SelectionCallbackState extends State<SelectionCallbackExample> {
   _onSelectionChanged(charts.SelectionModel model) {
     final selectedDatum = model.selectedDatum;
 
-    DateTime? time;
+    DateTime time;
     final measures = <String, num>{};
 
     // We get the model that updated with a list of [SeriesDatum] which is
@@ -149,7 +149,7 @@ class _SelectionCallbackState extends State<SelectionCallbackExample> {
     if (selectedDatum.isNotEmpty) {
       time = selectedDatum.first.datum.time;
       selectedDatum.forEach((charts.SeriesDatum datumPair) {
-        measures[datumPair.series.displayName!] = datumPair.datum.sales;
+        measures[datumPair.series.displayName] = datumPair.datum.sales;
       });
     }
 

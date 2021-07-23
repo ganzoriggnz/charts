@@ -23,10 +23,10 @@ class AppConfig {
   final bool showPerformanceOverlay;
 
   AppConfig({
-    required this.appName,
-    required this.appLink,
-    required this.theme,
-    required this.showPerformanceOverlay,
+     this.appName,
+     this.appLink,
+     this.theme,
+     this.showPerformanceOverlay,
   });
 }
 

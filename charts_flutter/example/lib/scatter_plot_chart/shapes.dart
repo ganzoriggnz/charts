@@ -197,9 +197,9 @@ class LinearSales {
   final int year;
   final int sales;
   final double radius;
-  final String? shape;
-  final charts.Color? fillColor;
-  final double? strokeWidth;
+  final String shape;
+  final charts.Color fillColor;
+  final double strokeWidth;
 
   LinearSales(this.year, this.sales, this.radius, this.shape, this.fillColor,
       this.strokeWidth);

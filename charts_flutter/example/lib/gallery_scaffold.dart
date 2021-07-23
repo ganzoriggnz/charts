@@ -26,10 +26,10 @@ class GalleryScaffold extends StatefulWidget {
   final GalleryWidgetBuilder childBuilder;
 
   GalleryScaffold({
-    required this.listTileIcon,
-    required this.title,
-    required this.subtitle,
-    required this.childBuilder,
+    this.listTileIcon,
+    this.title,
+    this.subtitle,
+    this.childBuilder,
   });
 
   /// Gets the gallery

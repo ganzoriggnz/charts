@@ -226,7 +226,7 @@ class SegmentsLineChart extends StatelessWidget {
 class LinearSales {
   final int year;
   final int sales;
-  final List<int>? dashPattern;
+  final List<int> dashPattern;
   final double strokeWidthPx;
 
   LinearSales(this.year, this.sales, this.dashPattern, this.strokeWidthPx);

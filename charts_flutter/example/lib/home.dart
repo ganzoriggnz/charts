@@ -51,9 +51,9 @@ class Home extends StatelessWidget {
   final legendsGalleries = legends.buildGallery();
 
   Home(
-      {Key? key,
+      {Key key,
       this.showPerformanceOverlay = false,
-      required this.onShowPerformanceOverlayChanged})
+      this.onShowPerformanceOverlayChanged})
       : super(key: key) {
     assert(onShowPerformanceOverlayChanged != null);
   }

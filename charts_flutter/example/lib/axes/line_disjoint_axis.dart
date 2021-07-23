@@ -261,8 +261,8 @@ class DisjointMeasureAxisLineChart extends StatelessWidget {
 /// Sample linear data type.
 class LinearClicks {
   final int year;
-  final int? clickCount;
-  final double? clickRate;
+  final int clickCount;
+  final double clickRate;
 
   LinearClicks(this.year, {this.clickCount, this.clickRate});
 }
